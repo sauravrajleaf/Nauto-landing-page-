@@ -162,3 +162,13 @@ body {
   list-style: none;
   padding: 0 2rem;
 }
+.footer__container__social-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #a0a3a8;
+}
+.footer__container__social-link:hover {
+  color: #78797f;
+  transition: 0.5s;
+}
