@@ -32,6 +32,7 @@ body {
   left: 14.7rem;
 }
 .header__logo {
+  display: block;
   height: 3.6rem;
   margin-bottom: 9rem;
 }
@@ -55,4 +56,48 @@ body {
   font-weight: 600;
   line-height: 1.8;
   word-spacing: 0.2rem;
+}
+
+.section-about {
+  position: absolute;
+  max-width: 100vh;
+}
+.section-about__description {
+  position: relative;
+  top: 6rem;
+  left: 14.7rem;
+}
+.section-about__heading-primary {
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+.section-about__heading-para {
+  color: #78797f;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.8;
+  word-spacing: 0.2rem;
+  padding-bottom: 2rem;
+}
+.section-about__para {
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  color: #78797f;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.8;
+  word-spacing: 0.2rem;
+}
+.section-about__list {
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  color: #78797f;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.8;
+  word-spacing: 0.2rem;
+}
+.section-about__heading-secondary {
+  font-size: 2.8rem;
+  font-weight: 400;
 }
