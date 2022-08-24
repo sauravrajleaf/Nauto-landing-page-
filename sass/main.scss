@@ -3,9 +3,8 @@ $color-subscritpt: #858d99; //Section 1 Heading EBOOK
 $color-subheading: #c3c3c5; //Section 1 Heading description
 $color-button: #31c079; //Section 2 submit button color
 $color-grey-dark: #78797f; //Section 2 text color
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-
+$color-footer-background: #e8ecef;
+$color-footer-text: #a0a3a8;
 $color-black: #000;
 
 *,
@@ -80,8 +79,9 @@ body {
 
 .section-about {
 	// display: flex;
-	position: absolute;
+	// position: absolute;
 	max-width: 100vh;
+
 	// background-color: #31c079;
 	&__description {
 		position: relative;
@@ -131,5 +131,96 @@ body {
 		font-size: 2.8rem;
 		font-weight: 400;
 		// padding-bottom: 0.1rem;
+	}
+}
+
+.footer {
+	margin-top: 12rem;
+	padding: 7rem 0;
+	background-color: #e8ecef;
+
+	// background-color: red;
+	&__container {
+		// background-color: #31c079;
+		text-align: center;
+
+		&-logo-box {
+			padding-bottom: 2rem;
+		}
+
+		&-copyrights-large {
+			color: $color-footer-text;
+			font-size: 1.5rem;
+			font-weight: 400;
+			padding-bottom: 1rem;
+		}
+
+		&-copyrights-small {
+			color: $color-footer-text;
+			font-size: 1.2rem;
+			font-weight: 200;
+			padding-bottom: 4rem;
+		}
+
+		&-site-links {
+			// display: flex;
+			padding: 0 3rem;
+			padding-bottom: 2rem;
+			// text-align: center;
+
+			// background-color: black;
+
+			&-list {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				list-style: none;
+			}
+		}
+
+		&__item {
+			// display: flex;
+			list-style: none;
+
+			// display: inline-block;
+			padding: 0 3rem;
+		}
+
+		&__link {
+			// padding-left: 3rem;
+			text-decoration: none;
+			font-size: 1.5rem;
+			font-weight: 600;
+			color: $color-footer-text;
+
+			&:hover {
+				color: $color-black;
+				transition: 0.5s;
+			}
+		}
+
+		&-social-media {
+			// display: flex;
+			padding: 0 3rem;
+			padding-bottom: 2rem;
+			// text-align: center;
+
+			// background-color: black;
+
+			&-list {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				list-style: none;
+			}
+		}
+
+		&__item-social {
+			// display: flex;
+			list-style: none;
+
+			// display: inline-block;
+			padding: 0 2rem;
+		}
 	}
 }
