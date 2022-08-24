@@ -1,0 +1,84 @@
+$color-white: #ffffff; //Section 1 Heading color
+$color-subscritpt: #858d99; //Section 1 Heading EBOOK
+$color-subheading: #c3c3c5; //Section 1 Heading description
+$color-button: #31c079; //Section 2 submit button color
+$color-grey-dark: #aeaeb2; //Section 2 text color
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+
+$color-black: #000;
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 200;
+	line-height: 1.6;
+	box-sizing: border-box;
+}
+
+.header {
+	height: 68vh;
+	background-image: url(../img/hero-img.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	&__content-box {
+		position: absolute;
+		max-width: 100vh;
+		top: 3.2rem;
+		left: 14.5rem;
+	}
+
+	&__logo {
+		height: 3.5rem;
+		margin-bottom: 9.8rem;
+	}
+
+	&__text-box-span {
+		color: $color-subheading;
+		font-weight: 700;
+		letter-spacing: 0.3rem;
+		font-size: 1rem;
+		// padding-bottom: 4rem;
+	}
+
+	&__text-box-primary {
+		padding-top: 4rem;
+		padding-bottom: 1.5rem;
+		font-size: 5rem;
+		color: $color-white;
+		font-weight: 700;
+		line-height: normal;
+	}
+
+	&__text-box-description {
+		color: $color-subheading;
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: normals;
+	}
+	// &__logo = header__logo
+	// &__logo {
+	// 	height: 3rem;
+	// }
+	// // &__text-box = header__text-box
+	// &__text-box {
+	// 	/* background-color: red; */
+	// 	position: absolute;
+	// 	top: 40%;
+	// 	left: 50%;
+	// 	transform: translate(-50%, -50%);
+	// 	text-align: center;
+	// }
+}
