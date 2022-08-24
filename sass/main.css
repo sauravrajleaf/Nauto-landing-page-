@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: sans-serif;
   font-weight: 200;
   line-height: 1.6;
   box-sizing: border-box;
@@ -19,39 +19,40 @@ body {
 
 .header {
   height: 68vh;
-  background-image: url(../img/hero-img.jpeg);
+  background-image: linear-gradient(to right, rgba(31, 42, 56, 0.8), rgba(42, 53, 54, 0.8)), url(../img/hero-img.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .header__content-box {
   position: absolute;
+  display: block;
   max-width: 100vh;
   top: 3.2rem;
-  left: 14.5rem;
+  left: 14.7rem;
 }
 .header__logo {
-  height: 3.5rem;
+  height: 3.6rem;
   margin-bottom: 9rem;
 }
 .header__text-box-span {
   color: #c3c3c5;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.3rem;
   font-size: 1rem;
 }
 .header__text-box-primary {
   padding-top: 3.5rem;
-  padding-bottom: 1.5rem;
-  font-size: 5.3rem;
+  padding-bottom: 1.2rem;
+  font-size: 4.9rem;
   color: #ffffff;
-  font-weight: 900;
-  line-height: normal;
+  font-weight: 600;
+  line-height: 1.2;
 }
 .header__text-box-description {
   color: #c3c3c5;
   font-size: 1.6rem;
   font-weight: 600;
-  line-height: 1.5;
-  word-spacing: 0.4rem;
+  line-height: 1.8;
+  word-spacing: 0.2rem;
 }
