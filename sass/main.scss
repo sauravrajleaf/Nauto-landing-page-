@@ -1,7 +1,7 @@
 $color-white: #ffffff; //Section 1 Heading color
 $color-subscritpt: #858d99; //Section 1 Heading EBOOK
 $color-subheading: #c3c3c5; //Section 1 Heading description
-$color-button: #31c079; //Section 2 submit button color
+$color-button: #2bb871; //Section 2 submit button color
 $color-grey-dark: #78797f; //Section 2 text color
 $color-footer-background: #e8ecef;
 $color-footer-text: #a0a3a8;
@@ -43,6 +43,21 @@ body {
 		max-width: 100vh;
 		top: 3.2rem;
 		left: 14.7rem;
+
+		&__header__nav {
+			position: absolute;
+			top: 3.2rem;
+			left: 14.7rem;
+			position: fixed;
+			background-color: red;
+			height: 10rem;
+			width: 100%;
+		}
+
+		&__header__nav__active {
+			background-color: #ffffff;
+			height: 10rem;
+		}
 	}
 
 	&__logo {
@@ -79,13 +94,17 @@ body {
 
 .section-about {
 	// display: flex;
-	// position: absolute;
-	max-width: 100vh;
 
+	display: flex;
 	// background-color: #31c079;
+	height: 85rem;
+	overflow: hidden;
+	// padding-top: 5rem;
 	&__description {
 		position: relative;
-		// display: block;
+		height: 100vh;
+		max-width: 100vh;
+		display: block;
 		// background-color: red;
 		top: 6rem;
 		left: 14.7rem;
@@ -131,6 +150,110 @@ body {
 		font-size: 2.8rem;
 		font-weight: 400;
 		// padding-bottom: 0.1rem;
+	}
+
+	&__form {
+		// background-color: red;
+		// padding: 5rem;
+		// display: flex;
+		padding: 2.5rem;
+		left: 95rem;
+		height: 85rem;
+		width: 45rem;
+		position: absolute;
+
+		margin-top: -5rem;
+		background-color: #ffffff;
+		overflow: hidden;
+		box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+		border-radius: 1rem;
+		&-header {
+			font-size: 2.8rem;
+			font-weight: 400;
+			text-align: center;
+		}
+
+		&__fields {
+			padding-top: 5rem;
+		}
+
+		&__fields__top-div {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
+		&__fields__bottom-div {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
+		&__inputs {
+			// background-color: #31c079;
+			display: flex;
+			flex-direction: column;
+			margin-left: 1rem;
+
+			label {
+				font-size: 1.5rem;
+				font-weight: 600;
+			}
+
+			input {
+				margin: 0.5rem 0;
+				padding: 1rem;
+			}
+
+			&__button {
+				margin: 5rem 0;
+
+				&--btn {
+					padding: 2rem 4.5rem;
+					border-radius: 4rem;
+					box-shadow: rgba($color-black, 0.1);
+					text-transform: uppercase;
+					font-weight: 400;
+					font-size: 1.8rem;
+					letter-spacing: 0.5rem;
+					color: $color-white;
+					// border-style: none;
+					background-color: $color-button;
+					cursor: pointer;
+
+					&:hover {
+						background-color: $color-white;
+						color: $color-button;
+						border-color: rgb(30, 126, 170);
+						transition: 0.1s;
+					}
+				}
+			}
+
+			// justify-content: space-between;
+			// padding-left: 5rem;
+		}
+
+		&__select {
+			// background-color: #31c079;
+			display: flex;
+			flex-direction: column;
+			margin-left: 0.5rem;
+			// justify-content: space-between;
+			// padding-left: 5rem;
+
+			p {
+				font-size: 1.5rem;
+				font-weight: 600;
+			}
+
+			select {
+				margin: 0.5rem;
+				padding: 1rem;
+				border-radius: 0;
+				border-style: none;
+			}
+		}
 	}
 }
 

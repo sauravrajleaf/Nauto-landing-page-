@@ -31,6 +31,19 @@ body {
   top: 3.2rem;
   left: 14.7rem;
 }
+.header__content-box__header__nav {
+  position: absolute;
+  top: 3.2rem;
+  left: 14.7rem;
+  position: fixed;
+  background-color: red;
+  height: 10rem;
+  width: 100%;
+}
+.header__content-box__header__nav__active {
+  background-color: #ffffff;
+  height: 10rem;
+}
 .header__logo {
   display: block;
   height: 3.6rem;
@@ -59,10 +72,15 @@ body {
 }
 
 .section-about {
-  max-width: 100vh;
+  display: flex;
+  height: 85rem;
+  overflow: hidden;
 }
 .section-about__description {
   position: relative;
+  height: 100vh;
+  max-width: 100vh;
+  display: block;
   top: 6rem;
   left: 14.7rem;
 }
@@ -99,6 +117,87 @@ body {
 .section-about__heading-secondary {
   font-size: 2.8rem;
   font-weight: 400;
+}
+.section-about__form {
+  padding: 2.5rem;
+  left: 95rem;
+  height: 85rem;
+  width: 45rem;
+  position: absolute;
+  margin-top: -5rem;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+.section-about__form-header {
+  font-size: 2.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+.section-about__form__fields {
+  padding-top: 5rem;
+}
+.section-about__form__fields__top-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.section-about__form__fields__bottom-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.section-about__form__inputs {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.section-about__form__inputs label {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.section-about__form__inputs input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+}
+.section-about__form__inputs__button {
+  margin: 5rem 0;
+}
+.section-about__form__inputs__button--btn {
+  padding: 2rem 4.5rem;
+  border-radius: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.8rem;
+  letter-spacing: 0.5rem;
+  color: #ffffff;
+  background-color: #2bb871;
+  cursor: pointer;
+}
+.section-about__form__inputs__button--btn:hover {
+  background-color: #ffffff;
+  color: #2bb871;
+  border-color: rgb(30, 126, 170);
+  transition: 0.1s;
+}
+.section-about__form__select {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+.section-about__form__select p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.section-about__form__select select {
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 0;
+  border-style: none;
 }
 
 .footer {
