@@ -140,15 +140,7 @@ body {
 }
 .section-about__form__fields__top-div {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-.section-about__form__fields__bottom-div {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 .section-about__form__inputs {
   display: flex;
@@ -161,13 +153,14 @@ body {
 }
 .section-about__form__inputs input {
   margin: 0.5rem 0;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  width: 100%;
 }
 .section-about__form__inputs__button {
   margin: 5rem 0;
 }
 .section-about__form__inputs__button--btn {
-  padding: 2rem 4.5rem;
+  padding: 2rem 4rem;
   border-radius: 4rem;
   box-shadow: rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
