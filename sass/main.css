@@ -24,21 +24,23 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.header__nav {
+  position: fixed;
+  height: 10rem;
+  width: 100%;
+  z-index: 1;
+}
+.header__nav--logo {
+  position: absolute;
+  top: 3.2rem;
+  left: 14.7rem;
+}
 .header__content-box {
   position: absolute;
   display: block;
   max-width: 100vh;
-  top: 3.2rem;
+  top: 15rem;
   left: 14.7rem;
-}
-.header__content-box__header__nav {
-  position: absolute;
-  top: 3.2rem;
-  left: 14.7rem;
-  position: fixed;
-  background-color: red;
-  height: 10rem;
-  width: 100%;
 }
 .header__content-box__header__nav__active {
   background-color: #ffffff;

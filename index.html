@@ -4,19 +4,31 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script src="script.js"></script>
 		<link rel="stylesheet" href="sass/main.css" />
 		<title>Nauto | Roadmap to Improving Fleet Safety</title>
 	</head>
 	<body>
 		<header class="header">
+			<nav class="header__nav">
+				<div class="header__nav--logo">
+					<img src="img/logo.svg" alt="logo" class="header__logo" />
+				</div>
+			</nav>
 			<div class="header__content-box">
-				<nav class="header__nav">
-					<div class="header__logo">
-						<img src="img/logo.svg" alt="logo" class="header__logo" />
-					</div>
-				</nav>
-
 				<div class="header__text-box">
 					<span class="header__text-box-span">EBOOK</span>
 					<h1 class="header__text-box-primary">
@@ -200,14 +212,5 @@
 				</ul>
 			</div>
 		</footer>
-		<script
-			type="module"
-			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-		></script>
-		<script
-			nomodule
-			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-		></script>
-		<script src="./script.js"></script>
 	</body>
 </html>
